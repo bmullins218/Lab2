@@ -34,16 +34,6 @@ public class Hand {
 	}
 
 	
-/*	
-	public static HandStrength evalHand(Hand h){
-		Collections.sort(h.getCardsInHand());
-		if (h.getCardsInHand().size!=5){
-			throw new Hand(h);
-			getCardsInHand() = new Hand();
-		}
-	}/**/
-	
-	
 	public static boolean isHandRoyalFlush(Hand h, HandScore hs) {
 
 		boolean isRoyalFlush = false;
@@ -168,7 +158,7 @@ public class Hand {
 		for (int i = 0; i < 4; i++) {
 			if (h.getCardsInHand().get(i).geteRank() != (h.getCardsInHand().get(i + 1).geteRank())) {
 				bIsStraight = true;
-				hs.setHandStrength(eHandStrength.Flush.getHandStrength());
+				hs.setHandStrength(eHandStrength.Straight.getHandStrength());
 				hs.setHiHand(h.getCardsInHand().get(eCardNo.FifthCard.getCardNo()).geteRank().getiRankNbr());
 				hs.setLoHand(0);
 				ArrayList<Card> kickers = new ArrayList<Card>();
@@ -237,7 +227,7 @@ public class Hand {
 						if (cardPosi == 2){
 							kickers.add(h.getCardsInHand().get(eCardNo.FirstCard.getCardNo()));
 						}
-					break;
+					break;  
 					}
 
 				}		

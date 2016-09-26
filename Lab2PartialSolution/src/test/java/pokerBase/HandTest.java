@@ -88,7 +88,7 @@ public class HandTest {
 		ArrayList<Card> FullHouse = new ArrayList<Card>();
 		FullHouse.add(new Card(eSuit.SPADES,eRank.EIGHT,0));
 		FullHouse.add(new Card(eSuit.CLUBS,eRank.EIGHT,0));
-		FullHouse.add(new Card(eSuit.DIAMONDS,eRank.EIGHT,0));
+		FullHouse.add(new Card(eSuit.DIAMONDS,eRank.EIGHT,0));   //DONE
 		FullHouse.add(new Card(eSuit.HEARTS,eRank.KING,0));
 		FullHouse.add(new Card(eSuit.SPADES,eRank.KING,0));
 		Hand h = new Hand();

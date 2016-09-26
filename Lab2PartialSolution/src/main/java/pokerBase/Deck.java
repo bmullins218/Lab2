@@ -18,7 +18,13 @@ public class Deck {
 			}
 		}
 		Collections.shuffle(deckCards);
-	}
+		
+//		for int(i = 0; i<NbrOfJokers;i++)
+//		{
+//			deckCards.add(new Card(eSuit,eRank,iCardNbr++));
+//		}
+		}
+	
 	
 	public Card Draw(){
 		return deckCards.remove(0);
